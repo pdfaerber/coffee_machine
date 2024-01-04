@@ -4,7 +4,6 @@ from machine_data import resources
 
 print(logo)
 
-# TODO 1. Prompt user by asking "What type of would you like?"
 
 
 # TODO 2. Print a report of all coffee machine resources
@@ -13,13 +12,16 @@ def print_resources():
           f"Water in ml: {resources.get('water')}\n"
           f"Milk in ml: {resources.get('milk')}\n"
           f"Coffee in ml: {resources.get('coffee')}\n"
-          f"Matcha in ml: {resources.get('matcha')}\n")
-
+          f"Matcha in ml: {resources.get('matcha')}\n"
+          f"Amount in Register: ${bank}\n")
 
 espresso = menu.get("espresso")
 latte = menu.get("latte")
 cappuccino = menu.get("cappuccino")
 matcha = menu.get("matcha_latte")
+
+# keep track of amount in register
+bank = 0
 
 machine = True
 while machine:
